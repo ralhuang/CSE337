@@ -1,0 +1,30 @@
+1. 
+    i.   command: echo $SHELL
+         result:  /bin/bash
+    ii.  command: bash 
+    iii. command: exit
+
+2. 
+     i. man cal
+        command:  ncal -oe 2027
+        result:   May   2 2027
+    ii. command:  cal July 2016 -A 24
+        result: a calendar showing 24 months including July 2016
+   iii. ncal -w Jan 2018 -A 5
+        result: a calendar showing the week numbers of 5 months after and including
+                Jan 2018
+
+3.   i. command: touch file1.txt
+        command: cat > file2.txt (cntrl - D to save and exit)
+        result:  files created under home directory
+    ii. command: wget http//:stonybrook.edu > index.html
+        result: IMG attached with HW, called 
+
+4.   i. command: realpath file1.txt file2.txt index.html
+        result:  /home/ralph/file1.txt 
+        result:  /home/ralph/file2.txt
+        result:  /home/ralph/index.html
+    ii. command: realpath --relative-base=$HOME file1.txt file2.txt index.html
+        result:  file1.txt
+        result:  file2.txt
+        result:  index.html

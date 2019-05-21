@@ -1,0 +1,29 @@
+1.
+    i. cd $HOME
+   ii. commands:    mkdir q2
+                    touch q2p1.txt
+                    ls -l q2p1.txt
+
+        result:     -rw-rw-r-- 1 ralph ralph 0 Nov 21 17:17 q2p1.txt
+ iii.   Read and write for all(owner and group) except read only for other.    
+  iv.   Read, write, and run for owner
+        Read and write for group
+        Run for other
+
+2.  i. cd q2
+   ii. cp ../q2p1.txt ./
+  iii. rm ../q2p1.txt
+   iv. mkdir q2p2
+
+3.  i. cd $HOME
+   ii. chmod u=wx q2
+  iii. Yes
+
+4.  i. cp -r q2 q2clone
+   ii. mv index.html q2clone/
+
+5.  i. rm -r q2/*
+   ii.  command: ls q2
+        result:  (empty)
+  iii. rm q2
+

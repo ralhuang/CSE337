@@ -1,0 +1,36 @@
+1. head -23 file1.txt | tail -1 file1.txt
+
+2. command: PATH=$PATH:/home/ralph/q3p2
+            gnome-mahjongg
+   result:  the copied mahjong game runes 
+   Adding directory to PATH can be useful because if you want to run executable in that directory, you can simply type the name of the directory instead of the full path.
+
+3. command: ls -p <directory_name> | grep -v /
+    test by using: ls -p <q2clone> | grep -v /
+    result: index.html, q2p1.txt
+
+4.  43 15 3,10,17,24 * touch $HOME/update.txt
+
+5.  i.  mkdir $HOME/At3mp
+   ii.  find /var/log/s*.* 2>$HOME/At3mp/logerror.txt
+        result: /var/log/syslog.1
+                /var/log/syslog.2.gz
+                /var/log/syslog.3.gz
+    
+6.  i.  find /usr/share/main/man1/a*.gz | wc -l
+        result: 56
+   ii.  ls -l /usr/share/man/man1/l* | grep ^l | wc -l
+        result: 19
+
+7.  i.  wc -w /usr/share/dict/words
+        result: 99171
+        wc -l /usr/share/dict/words
+        result: 99171
+        wc -c /usr/share/dict/words
+        result: 938848
+  ii.   1 word / line
+ iii.   head -500 /usr/share/dict/words | tail -200 > $HOME/At3mp/300-500.txt
+        head -800 /usr/share/dict/words | tail -100 > $HOME/At3mp/700-800.txt
+
+        to test: cat At3mp/300-500.txt | wc -l = 200
+                 cat At3mp/700-800.txt | wc -l = 100
