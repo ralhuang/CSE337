@@ -1,0 +1,23 @@
+1. [-+]?\d*(\.\D+)?F\s
+    Matches: "3f " (3f space)
+    Matches: "-3.FFFFFF " (-3.FFFFFF space)
+    Matches: "+.HALF " (+.HALF space)
+    Does not match: .3f
+    Does not match: "f " (f space)
+    Does not match: "- + fdafFD " (- space + space fdafFD)
+
+2. (#?)(1?)(one)\1\2\3
+    Matches: #1one#1one
+    Matches: oneone
+    Matches #one#one
+    Does not match: 1oneone1
+    Does not match: #1one1#
+    Does not match: 1#one1#one 
+
+3. ((a*?)\b).*\w\2\1
+    Matches: aaaa..aaaa
+    Matches: aa
+    Matches: abcdefg
+    Does not match: '\n' (new line character)
+    Does not match: +==-=-=-
+    Does not match:     (spaces)
