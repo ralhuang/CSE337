@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<p>Text Analyzer</p>
+<form action="/", method='POST'>
+    <h1> {{ form.title.label }}</h1>
+    <p> {{ form.text(cols="100", rows="30") }}</p>
+    <p> {% for subfield in form.radio1 %}
+            <tr>
+                <td>{{ subfield }}</td>
+                <td>{{ subfield.label }}</td>
+                <br>
+            </tr>
+        {% endfor %}</p>
+    <p>{{form.delimtext.label}} {{ form.delimtext() }}</p>
+    <p>{{ form.submit() }}<br></p>
+</form>
+
+</html>
